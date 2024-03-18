@@ -1,11 +1,11 @@
-import {Provider} from 'react-redux';
-import store from './store';
-import RestaurantScreen from './components/RestaurantScreen';
+import Counter from './features/counter/counter';
+import IncrementByAmount from './features/counter/IncrementByAmount';
 
 export default function App() {
   return (
-    <Provider store={store}>
-      <RestaurantScreen />
-    </Provider>
+    <div>
+      <Counter />
+      <IncrementByAmount />
+    </div>
   );
 }
